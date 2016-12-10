@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Reports</h1>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @available_reports.each do |ar| %>
+      <tr>
+        <td><%= ar.code %></td>
+        <td><%= link_to 'New Report', new_report_path %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<br>
+
